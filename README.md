@@ -3,6 +3,7 @@
 ## Visual Overview
 <img width="341" height="410" alt="image" src="https://github.com/user-attachments/assets/e3f0f250-671b-4bc5-837a-9e73ff1939af" />
 
+---
 
 **Selected Outputs (Current Year)**  
 | Category        | Metric                        | Result |
