@@ -1,7 +1,5 @@
 # AppleDot Financial Ratios — End-to-End Excel Ratio Framework with Benchmarks
 
----
-
 ## Visual Overview
 <img width="341" height="410" alt="image" src="https://github.com/user-attachments/assets/e3f0f250-671b-4bc5-837a-9e73ff1939af" />
 
@@ -18,12 +16,10 @@
 | Valuation       | P/E                           | **1.45** |
 | Efficiency      | Total Asset Turnover          | **2.20** |
 
-Metrics calculated from the project’s provided statements and notes. :contentReference[oaicite:0]{index=0}
-
 ---
 
 ## Case Description
-AppleDot Ltd (consumer electronics) engages in the design, manufacture, and sale of devices and services. The task is to evaluate the company’s performance using a robust ratio framework and benchmark the results against industry averages. :contentReference[oaicite:1]{index=1}
+AppleDot Ltd (consumer electronics) engages in the design, manufacture, and sale of devices and services. The task is to evaluate the company’s performance using a robust ratio framework and benchmark the results against industry averages.
 
 ---
 
@@ -31,7 +27,7 @@ AppleDot Ltd (consumer electronics) engages in the design, manufacture, and sale
 - Build a reusable **ratio analysis framework** (Activity, Liquidity, Solvency, Profitability, Valuation).  
 - **Calculate** current-year ratios from the supplied Income Statement and Balance Sheet.  
 - **Benchmark** against industry averages and interpret performance.  
-- Add **sanity checks** (e.g., CCC recomputation, leverage reconciliation, P/E × EPS ≈ Price). :contentReference[oaicite:2]{index=2}
+- Add **sanity checks** (e.g., CCC recomputation, leverage reconciliation, P/E × EPS ≈ Price).
 
 ---
 
@@ -44,12 +40,11 @@ AppleDot Ltd (consumer electronics) engages in the design, manufacture, and sale
    - *Profitability*: Gross, Operating, Net margins; ROE.  
    - *Valuation*: EPS, P/E, price back-check.  
 3. **Benchmark layer**: store industry averages and compute gaps vs. AppleDot.  
-4. **Quality controls**: re-derive CCC from components; recompute Debt-to-Capital from D/E; validate P/E × EPS ≈ Share Price. :contentReference[oaicite:3]{index=3}
+4. **Quality controls**: re-derive CCC from components; recompute Debt-to-Capital from D/E; validate P/E × EPS ≈ Share Price.
 
 ---
 
 ## Trial Balance / Data Summary (table + totals/checks)
-**Key Inputs Used for Ratios (Currency: USD ‘000 unless noted)**
 
 | Input                               | Value       |
 |---|---:|
@@ -69,12 +64,12 @@ AppleDot Ltd (consumer electronics) engages in the design, manufacture, and sale
 | Shares Outstanding (common)         | 100,000    |
 | Share Price (USD)                   | 12.95      |
 
-Numbers sourced from the provided statements/notes. :contentReference[oaicite:4]{index=4}
+Numbers sourced from the provided statements/notes.
 
 **Checks**  
 - Debt-to-Capital ≈ 2,745,398 / (2,745,398 + 2,225,347) = **55%** ✅  
 - P/E × EPS ≈ **1.45 × 8.94 = 12.95** (≈ price) ✅  
-- CCC = **67 + 8.6 − 75 = 0.6 days** ✅ :contentReference[oaicite:5]{index=5}
+- CCC = **67 + 8.6 − 75 = 0.6 days** ✅
 
 ---
 
@@ -85,20 +80,20 @@ Numbers sourced from the provided statements/notes. :contentReference[oaicite:4]
 - NPM = 894,178 / 28,986,035 = **3.1%**  
 - ROE ≈ 894,178 / 2,225,347 = **40.2%**  
 - Financial Leverage ≈ 13,174,034 / 2,225,347 = **5.92×**  
-- Total Asset Turnover = 28,986,035 / 13,174,034 = **2.20×** :contentReference[oaicite:6]{index=6}
+- Total Asset Turnover = 28,986,035 / 13,174,034 = **2.20×**
 
 **Liquidity & Capital Structure**  
 - Current Ratio = 7,816,092 / 7,730,390 = **1.01**  
 - Quick Ratio = 7,454,799 / 7,730,390 = **0.96**  
 - Cash Ratio = 2,146,661 / 7,730,390 = **0.28**  
 - D/E = (1,347,357 + 1,398,041) / 2,225,347 = **123%**  
-- Debt-to-Capital = **55%** (as above). :contentReference[oaicite:7]{index=7}
+- Debt-to-Capital = **55%** (as above).
 
 **Working Capital Cycle**  
-- DSO = **67 days**; DIO = **8.6 days**; DPO = **75 days** → CCC = **0.6 days**. :contentReference[oaicite:8]{index=8}
+- DSO = **67 days**; DIO = **8.6 days**; DPO = **75 days** → CCC = **0.6 days**.
 
 **Valuation**  
-- EPS = 894,178 / 100,000 = **8.94**; P/E = 12.95 / 8.94 = **1.45**. :contentReference[oaicite:9]{index=9}
+- EPS = 894,178 / 100,000 = **8.94**; P/E = 12.95 / 8.94 = **1.45**.
 
 ---
 
@@ -108,17 +103,17 @@ Numbers sourced from the provided statements/notes. :contentReference[oaicite:4]
 - Inventory Turnover = COGS / Avg Inventory; `DIO = 365 / InventoryTurnover = 8.6`  
 - Payables Turnover = Purchases (or COGS adj.) / Avg Payables; `DPO = 365 / PayablesTurnover = 75`  
 - `CCC = DSO + DIO − DPO = 0.6`  
-- `Asset_Turnover = Revenue / Avg_Total_Assets = 2.20` :contentReference[oaicite:10]{index=10}
+- `Asset_Turnover = Revenue / Avg_Total_Assets = 2.20`
 
 **Liquidity**  
 - `Current = Current_Assets / Current_Liabilities = 1.01`  
 - `Quick = (Cash + Marketable + Receivables) / Current_Liabilities = 0.96`  
-- `Cash_Ratio = (Cash + Marketable) / Current_Liabilities = 0.28` :contentReference[oaicite:11]{index=11}
+- `Cash_Ratio = (Cash + Marketable) / Current_Liabilities = 0.28`
 
 **Solvency**  
 - `D_E = (ST_Debt + LT_Debt) / Total_Equity = 123%`  
 - `Debt_to_Cap = Total_Debt / (Total_Debt + Total_Equity) = 55%`  
-- `Leverage = Avg_Total_Assets / Avg_Equity = 5.92×` :contentReference[oaicite:12]{index=12}
+- `Leverage = Avg_Total_Assets / Avg_Equity = 5.92×`
 
 **Profitability & Valuation**  
 - `GPM = Gross_Profit / Revenue = 47.1%`  
@@ -126,7 +121,7 @@ Numbers sourced from the provided statements/notes. :contentReference[oaicite:4]
 - `NPM = Net_Income / Revenue = 3.1%`  
 - `ROE ≈ Net_Income / Avg_Equity = 40.2%`  
 - `EPS = Net_Income / Shares = 8.94`  
-- `P_E = Price / EPS = 1.45` (price back-check passes). :contentReference[oaicite:13]{index=13}
+- `P_E = Price / EPS = 1.45` (price back-check passes).
 
 ---
 
@@ -150,7 +145,7 @@ Numbers sourced from the provided statements/notes. :contentReference[oaicite:4]
 | P/E                       | 1.45 | 5.5  | Lower market multiple |
 | Share Price (USD)         | 12.95| 32.1 | Lower absolute price |
 
-Benchmarks as provided with the task; interpretations follow directly from these comparisons. :contentReference[oaicite:14]{index=14}
+Benchmarks as provided with the task; interpretations follow directly from these comparisons.
 
 ---
 
@@ -164,14 +159,14 @@ Benchmarks as provided with the task; interpretations follow directly from these
   - `=(ST_Debt + LT_Debt) / Total_Equity` → D/E  
   - `=Net_Income / Shares_Outstanding` → EPS  
   - `=Price / EPS` → P/E  
-- **Validation**: CCC recomputation; leverage & capital mix reconciliations; P/E × EPS ≈ price. :contentReference[oaicite:15]{index=15}
+- **Validation**: CCC recomputation; leverage & capital mix reconciliations; P/E × EPS ≈ price.
 
 ---
 
 ## What I Learned
 - Building a **portable ratio framework** that cleanly separates inputs, calculations, and benchmarks.  
 - The **tension between high gross margins and low operating margins** (cost structure focus).  
-- How **leverage amplifies ROE** and risks; why liquidity backstops matter despite strong CCC. :contentReference[oaicite:16]{index=16}
+- How **leverage amplifies ROE** and risks; why liquidity backstops matter despite strong CCC.
 
 ---
 
